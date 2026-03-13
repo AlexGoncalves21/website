@@ -134,7 +134,7 @@ a:hover {
     list-style: none;
     border-left: 2px solid var(--border-color);
     padding-left: 20px;
-    margin-left: 140px;
+    margin-left: 150px;
     /* Space for the date */
 }
 
@@ -162,7 +162,7 @@ a:hover {
 
 .timeline-date {
     position: absolute;
-    left: -170px;
+    left: -180px;
     width: 140px;
     text-align: right;
     top: 2px;
@@ -236,4 +236,67 @@ footer p {
         text-align: left;
         margin-bottom: 0.5em;
     }
+
+    /* Mobile tweaks for the projects section */
+    .project-item {
+        gap: 1em;
+    }
+
+    .project-image {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* Back Link & Divider */
+.back-link {
+    margin-bottom: 1em;
+}
+
+.back-link a {
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: var(--text-main);
+}
+
+.projects-header {
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+/* Projects Section */
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.project-item {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+    align-items: flex-start;
+}
+
+.project-image {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    flex-shrink: 0;
+    border-radius: 8px; /* Optional: adds slight rounding to the image corners */
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+}
+
+.project-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.project-description {
+    margin-bottom: 0;
 }
