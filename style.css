@@ -134,6 +134,10 @@ a:hover {
     list-style: none;
     border-left: 2px solid var(--border-color);
     padding-left: 20px;
+    padding-top: 2em; /* Extends line upwards */
+    margin-top: -2em; /* Counters the padding so content doesn't shift down */
+    padding-bottom: 2em; /* Extends line below last item */
+    margin-bottom: -2em; /* Counters the bottom padding */
     margin-left: 150px;
     /* Space for the date */
 }
@@ -243,8 +247,11 @@ footer p {
     }
 
     .project-image {
-        width: 60px;
-        height: 60px;
+        display: none;
+    }
+
+    .project-description {
+        text-align: justify;
     }
 }
 
