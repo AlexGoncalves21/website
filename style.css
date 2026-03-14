@@ -228,6 +228,7 @@ a:hover {
 .timeline-content p {
     margin-bottom: 0;
     font-size: 0.95rem;
+    text-align: justify;
 }
 
 .timeline-content ul {
@@ -239,6 +240,7 @@ a:hover {
 
 .timeline-content li {
     margin-bottom: 0.4em;
+    text-align: justify;
 }
 
 .timeline-content li:last-child {
