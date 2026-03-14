@@ -219,41 +219,6 @@ footer p {
     margin-bottom: 0;
 }
 
-/* Responsive adjustments */
-@media (max-width: 600px) {
-    .container {
-        padding: 0 15px;
-        margin: 20px auto;
-    }
-
-    h1 {
-        font-size: 1.75rem;
-    }
-
-    .timeline {
-        margin-left: 10px;
-    }
-
-    .timeline-date {
-        position: static;
-        width: auto;
-        text-align: left;
-        margin-bottom: 0.5em;
-    }
-
-    /* Mobile tweaks for the projects section */
-    .project-item {
-        gap: 1em;
-    }
-
-    .project-image {
-        display: none;
-    }
-
-    .project-description {
-        text-align: justify;
-    }
-}
 
 /* Back Link & Divider */
 .back-link {
@@ -282,7 +247,7 @@ footer p {
     display: flex;
     flex-direction: row;
     gap: 1.5em;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .project-image {
@@ -291,6 +256,18 @@ footer p {
     object-fit: contain;
     flex-shrink: 0;
     border-radius: 8px; /* Optional: adds slight rounding to the image corners */
+}
+
+.project-emoji-placeholder {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background-color: #f1f5f9; /* Soft gray/blue background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
 }
 
 .project-content {
@@ -306,4 +283,40 @@ footer p {
 
 .project-description {
     margin-bottom: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .container {
+        padding: 0 15px;
+        margin: 20px auto;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    .timeline {
+        margin-left: 10px;
+    }
+
+    .timeline-date {
+        position: static;
+        width: auto;
+        text-align: left;
+        margin-bottom: 0.5em;
+    }
+
+    /* Mobile tweaks for the projects section */
+    .project-item {
+        gap: 1em;
+    }
+
+    .project-image, .project-emoji-placeholder {
+        display: none;
+    }
+
+    .project-description {
+        text-align: justify;
+    }
 }
