@@ -81,11 +81,34 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Profile Header */
+.profile-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2em;
+    margin-bottom: 2em;
+}
+
+.profile-pic {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+}
+
 /* Header Links */
 .links {
     display: flex;
     gap: 15px;
-    margin-bottom: 2em;
+    margin-bottom: 0;
     flex-wrap: wrap;
 }
 
@@ -290,6 +313,21 @@ footer p {
     .container {
         padding: 0 15px;
         margin: 20px auto;
+    }
+
+    .profile-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 1em;
+    }
+
+    .links {
+        justify-content: center;
+    }
+
+    .profile-pic {
+        width: 120px;
+        height: 120px;
     }
 
     h1 {
