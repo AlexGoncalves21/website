@@ -133,7 +133,31 @@ a:hover {
 .nav-links {
     display: flex;
     align-items: center;
-    gap: 12px;
+}
+
+/* Desktop Nav Alignment */
+@media (min-width: 601px) {
+    .nav-links {
+        gap: 0;
+        position: relative;
+    }
+    
+    .nav-links a:first-child {
+        width: 150px;
+        text-align: right;
+        padding-right: 15px;
+        box-sizing: border-box;
+    }
+    
+    .nav-links .separator {
+        position: absolute;
+        left: 151px; /* 150px margin + 1px to center over 2px border */
+        transform: translateX(-50%);
+    }
+    
+    .nav-links a:last-child {
+        padding-left: 15px;
+    }
 }
 
 .nav-links a {
@@ -323,6 +347,11 @@ footer p {
 
     .links {
         justify-content: center;
+    }
+
+    .nav-links {
+        justify-content: center;
+        gap: 12px;
     }
 
     .profile-pic {
